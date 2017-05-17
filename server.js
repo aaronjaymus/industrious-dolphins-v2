@@ -38,7 +38,8 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 
 // MongoDB Configuration configuration
-mongoose.connect("mongodb://localhost/toolshare");
+//mongoose.connect("mongodb://localhost/toolshare");
+mongoose.connect("mongodb://heroku_tzw26bvv:87pisqckca7dml1e3nu03j2v0q@ds143071.mlab.com:43071/heroku_tzw26bvv");
 var db = mongoose.connection;
 
 db.on("error", function(err) {
